@@ -81,7 +81,7 @@ public class TipoDeReclamoModel {
 		PreparedStatement pstm = null;
 		int salida = -1;
 		try {
-			String sql = "update tiporeclamo set descripcion =?, estado =?,fechaRegistro =? where idtipoReclamo =? ";
+			String sql = "update tiporeclamo set descripcion =?, estado =?,fecha =? where idtipoReclamo =? ";
 			conn = MySqlDBConexion.getConexion();
 			pstm = conn.prepareStatement(sql);
 			pstm.setString(1, obj.getDescripcion());
